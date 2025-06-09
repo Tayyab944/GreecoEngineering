@@ -10,25 +10,35 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+    .hover-glow:hover {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body class="bg-white text-gray-800">
 
   <!-- Hero Section -->
-  <header class="bg-gradient-to-r from-green-500 to-teal-400 text-white py-16 px-6">
+  <header class="bg-gradient-to-r from-green-500 to-teal-400 text-white py-20 px-6 relative">
+    <!-- Logo -->
+    <div class="absolute top-6 left-6">
+      <img src="Logo.jpg" alt="Greeco Engineering Logo" class="h-12 md:h-16 object-contain">
+    </div>
+
     <div class="max-w-5xl mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Greeco Engineering Pvt Ltd</h1>
-      <p class="text-xl md:text-2xl font-light mb-6">Empowering Clean and Sustainable Energy Solutions</p>
-      <p class="text-lg max-w-3xl mx-auto">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-5">Greeco Engineering Pvt Ltd</h1>
+      <p class="text-xl md:text-2xl font-light mb-6 max-w-3xl mx-auto">
+        Empowering Clean and Sustainable Energy Solutions
+      </p>
+      <p class="text-lg max-w-3xl mx-auto opacity-90">
         A renewable energy startup based in Pakistan, delivering innovative solar energy solutions for residential and industrial clients.
       </p>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="py-16 px-6 bg-gray-50">
+  <section id="about" class="py-20 px-6 bg-gray-50">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">About Us</h2>
+      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-10">About Us</h2>
       <p class="text-lg text-gray-700 leading-relaxed">
         Greeco Engineering is a forward-thinking startup committed to advancing clean energy adoption across Pakistan. We specialize in designing efficient solar panel layouts ranging from 25–500 kWh, offering precise carbon offset calculations, and providing expert consultancy on sustainable energy projects. Our mission is to make renewable energy accessible, affordable, and impactful for all sectors.
       </p>
@@ -36,19 +46,19 @@
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="py-16 px-6 bg-white">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+  <section id="services" class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-16">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-green-50 p-8 rounded-xl shadow-md hover-glow transition-all duration-300">
           <h3 class="text-xl font-semibold text-green-700 mb-3">Solar Panel Installation</h3>
           <p class="text-gray-700">End-to-end installation of high-efficiency solar panels tailored to your energy needs.</p>
         </div>
-        <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div class="bg-green-50 p-8 rounded-xl shadow-md hover-glow transition-all duration-300">
           <h3 class="text-xl font-semibold text-green-700 mb-3">BOQ Preparation</h3>
           <p class="text-gray-700">Detailed Bill of Quantities (BOQ) for accurate project planning and budgeting.</p>
         </div>
-        <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div class="bg-green-50 p-8 rounded-xl shadow-md hover-glow transition-all duration-300">
           <h3 class="text-xl font-semibold text-green-700 mb-3">Carbon Analysis</h3>
           <p class="text-gray-700">Comprehensive carbon footprint assessments and offset strategies for businesses.</p>
         </div>
@@ -57,87 +67,88 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-16 px-6 bg-gray-50">
+  <section id="projects" class="py-20 px-6 bg-gray-50">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">Featured Projects</h2>
-      <div class="space-y-10">
-        <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-16">Featured Projects</h2>
+      <div class="space-y-12">
+        <div class="bg-white p-6 rounded-lg shadow-md hover-glow transition-all duration-300">
           <img src="https://placehold.co/800x400?text=500kWh+Solar+Project" alt="500kWh Solar Project" class="w-full h-48 object-cover rounded mb-4" />
           <h3 class="text-2xl font-semibold text-gray-800 mb-2">500kWh Solar Power Plant – Lahore</h3>
           <p class="text-gray-700">
             Successfully designed and implemented a large-scale 500kWh solar power plant in Lahore. This project demonstrates our capability to deliver clean, sustainable energy solutions that reduce reliance on fossil fuels.
           </p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="bg-white p-6 rounded-lg shadow-md hover-glow transition-all duration-300">
           <img src="https://placehold.co/800x400?text=Residential+Solar+Installation" alt="Residential Solar Installation" class="w-full h-48 object-cover rounded mb-4" />
           <h3 class="text-2xl font-semibold text-gray-800 mb-2">10KW Residential Solar System – Gulberg, Lahore</h3>
           <p class="text-gray-700">
-            Installed multiple 10KW to 15KW on-grid solar systems with Tier-1 Canadian panels, Growatt string inverter, and net metering integration. The homeowners now enjoys reduced electricity bills and a reliable energy supply during peak summer months.
+            Installed multiple 10KW to 15KW on-grid solar systems with Tier-1 Canadian panels, Growatt string inverter, and net metering integration. The homeowners now enjoy reduced electricity bills and a reliable energy supply during peak summer months.
           </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Offers Section -->
-  <section id="offers" class="py-16 px-6 bg-white">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-10">Special Summer Solar Packages – Lahore</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+  <section id="offers" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-16">Special Summer Solar Packages – Lahore</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 hover-glow transition-all duration-300">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">6KW ON-GRID System</h3>
           <p class="text-gray-600 mb-3">Monthly Generation: 750–800 units/month</p>
           <ul class="text-sm text-gray-700 list-disc pl-5 space-y-1 mb-4">
             <li>Canadian/Jinko/Longi JA N-Type Tier 1 Panels</li>
-            <li>Growatt Sting Inverter</li>
+            <li>Growatt String Inverter</li>
             <li>Net Metering Included</li>
             <li>Earthing and Boring</li>
             <li>Standard Structure</li>
             <li>After Sales Services</li>
           </ul>
-          <p class="font-bold text-green-600">Price: Rs 685,000/-</p>
+          <p class="font-bold text-green-600 text-lg">Price: Rs 685,000/-</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 hover-glow transition-all duration-300">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">10KW ON-GRID System</h3>
           <p class="text-gray-600 mb-3">Monthly Generation: 1200–1300 units/month</p>
           <ul class="text-sm text-gray-700 list-disc pl-5 space-y-1 mb-4">
             <li>Canadian/Jinko/Longi JA N-Type Tier 1 Panels</li>
-            <li>Growatt Sting Inverter</li>
+            <li>Growatt String Inverter</li>
             <li>Net Metering Included</li>
             <li>Earthing and Boring</li>
             <li>Standard Structure</li>
             <li>After Sales Services</li>
           </ul>
-          <p class="font-bold text-green-600">Price: Rs 875,000/-</p>
+          <p class="font-bold text-green-600 text-lg">Price: Rs 875,000/-</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 hover-glow transition-all duration-300">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">15KW ON-GRID System</h3>
           <p class="text-gray-600 mb-3">Monthly Generation: 1800–2000 units/month</p>
           <ul class="text-sm text-gray-700 list-disc pl-5 space-y-1 mb-4">
             <li>Canadian/Jinko/Longi JA N-Type Tier 1 Panels</li>
-            <li>Growatt Sting Inverter</li>
+            <li>Growatt String Inverter</li>
             <li>Net Metering Included</li>
             <li>Earthing and Boring</li>
             <li>Standard Structure</li>
             <li>After Sales Services</li>
           </ul>
-          <p class="font-bold text-green-600">Price: Rs 1,135,000/-</p>
+          <p class="font-bold text-green-600 text-lg">Price: Rs 1,135,000/-</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 px-6 bg-gray-50">
+  <section id="contact" class="py-20 px-6 bg-gray-50">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold text-gray-800 mb-8">Contact Us</h2>
-      <p class="text-lg text-gray-700 mb-4">📧 Email: Greecoengineering@gmail.com</p>
+      <h2 class="text-3xl font-semibold text-gray-800 mb-10">Contact Us</h2>
+      <p class="text-lg text-gray-700 mb-4">📧 Email: <a href="mailto:Greecoengineering@gmail.com" class="underline hover:text-green-600">Greecoengineering@gmail.com</a></p>
       <p class="text-lg text-gray-700 mb-4">📞 Phone: +92 302 1791661</p>
       <p class="text-lg text-gray-700">📍 Office No.19, 2nd Floor, Al-Hafeez Tower, MM Alam Rd, Block C1 Gulberg III, Lahore</p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6 px-6 text-center">
+  <footer class="bg-gray-800 text-white py-8 px-6 text-center">
     <p class="text-sm">&copy; {June 2025} Greeco Engineering Pvt Ltd. All rights reserved.</p>
   </footer>
 
